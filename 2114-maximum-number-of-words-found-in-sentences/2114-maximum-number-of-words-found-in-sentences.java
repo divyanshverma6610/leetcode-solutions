@@ -1,0 +1,19 @@
+class Solution {
+    public int mostWordsFound(String[] sentences) {
+        int max = 0;
+
+        for (String s : sentences) {
+            int count = s.split(" ").length;
+
+            if (count > max) {
+                max = count;
+            }
+        }
+
+        return max;
+    }
+}
+
+// Synced seamlessly with LeetHub Pro
+// Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+// Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
